@@ -1,0 +1,50 @@
+Apache OpenOffice 4.1.16 - Version portable (francais, Windows 32/64 bits)
+=========================================================================
+
+Cette archive contient Apache OpenOffice 4.1.16 (derniere version publiee par
+la fondation Apache) extrait de l'installeur officiel Windows, sans aucune
+modification des binaires. Une seule ligne de configuration a ete changee
+(program\bootstrap.ini) pour que le profil utilisateur soit enregistre dans le
+dossier "Data" situe a cote du programme, et non dans %APPDATA%.
+
+Aucune installation n'est necessaire et rien n'est ecrit dans le registre.
+Le dossier complet peut etre place sur une cle USB, un disque externe ou dans
+n'importe quel repertoire, et deplace a volonte.
+
+Utilisation
+-----------
+  - Double-cliquez sur "OpenOffice.cmd" (centre de demarrage), ou sur
+    "Writer.cmd", "Calc.cmd", "Impress.cmd", "Draw.cmd", "Base.cmd", "Math.cmd".
+  - Vous pouvez aussi lancer directement program\soffice.exe (ou swriter.exe,
+    scalc.exe, simpress.exe, sdraw.exe, sbase.exe, smath.exe) et creer vos
+    propres raccourcis.
+
+Donnees utilisateur
+-------------------
+  - Tous vos reglages, dictionnaires personnels, macros, extensions et la
+    liste des documents recents sont stockes dans :  Data\settings\user
+  - Pour reinitialiser OpenOffice, fermez-le puis supprimez le dossier
+    Data\settings (il sera recree au prochain lancement).
+  - Pour conserver vos reglages lors d'une mise a jour, copiez simplement le
+    dossier "Data" dans la nouvelle version.
+
+Remarques
+---------
+  - Java (JRE 32 bits) n'est pas inclus. Il n'est necessaire que pour
+    OpenOffice Base, certains assistants et quelques extensions. Sans Java,
+    Writer, Calc, Impress, Draw et Math fonctionnent normalement.
+  - Les polices livrees avec OpenOffice (DejaVu, Liberation, Gentium, Caladea,
+    Carlito...) sont dans share\fonts\truetype et sont chargees automatiquement
+    par OpenOffice sans etre installees dans Windows.
+  - Les associations de fichiers (.odt, .docx...) ne sont pas creees : utilisez
+    "Ouvrir avec" ou glissez-deposez le fichier sur un des lanceurs.
+  - Ne lancez pas cette version portable en meme temps qu'une version installee
+    classique d'OpenOffice.
+
+Source et licence
+-----------------
+  Installeur d'origine :
+    https://downloads.apache.org/openoffice/4.1.16/binaries/fr/Apache_OpenOffice_4.1.16_Win_x86_install_fr.exe
+    SHA-256 : 5cf9b3015b279f6470cd8dc6f77399da82b77edb49db59fe21e64b3c67dc3252
+  Apache OpenOffice est distribue sous licence Apache 2.0 (voir licenses\LICENSE
+  et licenses\NOTICE). Notes de version : readmes\readme_fr.txt
